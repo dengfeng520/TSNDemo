@@ -1,0 +1,65 @@
+#baseNav {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(252,218,46,1);
+    height: 64px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#mineTitle {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    height: 24px;
+}
+
+html, body {
+    height: 100%;
+    background: red;
+}
+
+.container {
+    position: aboslute;
+    bottom: 0;
+    padding-bottom: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+    padding-bottom: env(safe-area-inset-bottom); /* 兼容 iOS >= 11.2 */
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .purchaseDiv, .closeBookList, .BottomProgress {
+        bottom: 34px !important;
+    }
+
+    #baseNav {
+        height: 88px;
+    }
+
+    #mineTitle {
+        padding: 40px;
+    }
+}
+
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+    #baseNav {
+        height: 64px;
+    }
+    #mineTitle {
+        top: 24px;
+    }
+}
+
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+    #baseNav {
+        height: 64px;
+    }
+    #mineTitle {
+        top: 24px;
+    }
+}

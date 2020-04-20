@@ -1,0 +1,23 @@
+div {
+    text-align: center;
+}
+#homeTitle {
+    font-size: 23px;
+}
+#homeLogoImg {
+    width: 140px;
+    height: 140px;
+    vertical-align: middle;
+    margin-top: 64px;
+}
+#jumpOverBtn {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20pt;
+    right: 12pt;
+}
